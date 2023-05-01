@@ -5,6 +5,7 @@ import (
 	"runtime"
 
 	"example.com/notes/basics"
+	methods "example.com/notes/methods_and_interfaces"
 )
 
 func switchCase(n int) {
@@ -50,4 +51,12 @@ func main() {
 	// functions
 	basics.FunctionValues()
 	fmt.Println(basics.FiboWithClosure())
+
+	// Methods
+	fmt.Println(methods.UseMethod())
+
+	// Methods on any types
+	f := methods.MyFloat(3)
+	fmt.Println("The abs method on type MyFloat", f.Abs())
+
 }
