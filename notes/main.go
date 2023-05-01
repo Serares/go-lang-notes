@@ -41,4 +41,13 @@ func main() {
 
 	// slices
 	basics.Pic(2, 3)
+
+	// maps
+	basics.CreateMap()
+
+	fmt.Println(basics.WordCount("this is a big string"))
+
+	// functions
+	basics.FunctionValues()
+	fmt.Println(basics.FiboWithClosure())
 }
