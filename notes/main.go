@@ -6,6 +6,7 @@ import (
 
 	"example.com/notes/basics"
 	methods "example.com/notes/methods_and_interfaces"
+	"example.com/notes/generics"
 )
 
 func switchCase(n int) {
@@ -61,4 +62,16 @@ func main() {
 
 	// use stringer
 	methods.UseStringer()
+
+	// use errors
+	methods.HandleErrors()
+
+	// use readers
+	methods.CheckReader()
+
+	// use reader
+	methods.UseTheReader()
+
+	// use linked list
+	generics.UseList()
 }
