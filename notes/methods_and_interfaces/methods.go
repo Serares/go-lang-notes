@@ -15,8 +15,8 @@ func UseMethod() float64 {
 	return v.Abs()
 }
 
-type MyFloat float64
+type TheFloat float64
 
-func (f MyFloat) Abs() float64 {
+func (f TheFloat) Abs() float64 {
 	return float64(f)
 }

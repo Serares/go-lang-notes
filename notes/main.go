@@ -59,4 +59,6 @@ func main() {
 	f := methods.MyFloat(3)
 	fmt.Println("The abs method on type MyFloat", f.Abs())
 
+	// use stringer
+	methods.UseStringer()
 }

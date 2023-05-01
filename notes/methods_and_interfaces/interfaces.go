@@ -17,11 +17,11 @@ func (f MyFloat) Abs() float64 {
 	return float64(f)
 }
 
-type Vertex struct {
+type MyStruct struct {
 	X, Y float64
 }
 
-func (v *Vertex) Abs() float64 {
+func (v *MyStruct) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 }
 
@@ -29,7 +29,7 @@ func (v *Vertex) Abs() float64 {
 func Interfaces() {
 	var a Abser
 	f := MyFloat(-math.Sqrt2)
-	v := Vertex{3, 4}
+	v := MyStruct{3, 4}
 
 	a = f  // a MyFloat implements Abser
 	a = &v // a *Vertex implements Abser
