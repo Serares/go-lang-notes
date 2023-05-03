@@ -5,8 +5,9 @@ import (
 	"runtime"
 
 	"example.com/notes/basics"
-	methods "example.com/notes/methods_and_interfaces"
 	"example.com/notes/generics"
+	"example.com/notes/gorutines"
+	methods "example.com/notes/methods_and_interfaces"
 )
 
 func switchCase(n int) {
@@ -74,4 +75,7 @@ func main() {
 
 	// use linked list
 	generics.UseList()
+
+	// gorutines
+	gorutines.CheckTrees()
 }
